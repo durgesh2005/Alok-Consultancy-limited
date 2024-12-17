@@ -1,0 +1,1454 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    color: white;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background-color: #262626;
+    overflow-x: hidden;
+    overflow-y:scroll; /* Enable vertical scrolling */
+    transition: 0.5s;
+    padding-top: 10px;
+  }
+  
+  .nav-logo {
+    text-align: center;
+    padding: 10px 0px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 10px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-bottom: 0.01px solid rgb(108, 108, 108);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav button {
+    background: none;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    border: none;
+  }
+  
+  .contact-btn {
+    width: 100%;
+  }
+
+  .btn {
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 5px; /* Adds space between the image and text */
+    /* padding: 6px; */
+    font-size: 12px;
+    color: white;
+    background: none;
+    border: 1px solid #36b6ff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .btn img {
+    vertical-align: middle;
+    display: inline-block;
+  }
+  
+  .btn span {
+    padding-left: 5px;
+    font-size: 12px; /* Match font size with button text */
+  }
+  
+  .contact-btn button {
+    font-size: 10px;
+    border: 1px solid #36b6ff;
+    border-radius: 10px;
+    padding: 10px 6px;
+    width: 100%;
+  }
+  
+  .sidenav a:first-child {
+    padding: 30px;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding-bottom: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+.main {
+    position: relative;
+}
+
+
+.head-menu {
+    background-color: #1f053c;
+    display: block;
+    color:white;
+    padding: 0px 10px;
+}
+
+.menu-list {
+    padding: 12px 5px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+ 
+
+.add-email {
+    color: #B4B7C9 !important;
+}
+
+.right-menu a{
+    color: white;
+    text-decoration: none;
+
+}
+
+
+.right-menu span {
+    padding: 0px 10px;
+}
+
+
+.left-menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-menu ul li a {
+    text-decoration: none;
+    color: #dfd9e7;
+
+}
+
+
+.left-menu ul li {
+    list-style: none;
+    padding: 0px 5px;
+    height: 20px;
+}
+
+
+/* second main menu starts here */
+
+/* Add a sticky class to the slide-head */
+.sticky-menu {
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* Or use the background color from your design */
+    z-index: 998;
+    box-shadow: 0 4px 4px -5px gray; /* Optional shadow for better visibility */
+    padding: 10px 20px; /* Optional padding adjustment */
+}
+
+/* Hide the top header */
+.hidden-header {
+    display: none;
+}
+
+
+.slide-head {
+    display: block;
+    padding: 0px 20px 0px 40px;
+}
+
+.slide-head-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+ display: flex;
+}
+
+ .navbar li:hover {
+    color: #4e2e73;
+    cursor: pointer;
+ }
+
+ .navbar li:hover .dropdown-menu {
+    color: black;
+ }
+
+.navbar ul a{
+    padding: 0px 20px;
+    margin: 0;
+    color: black;
+    font-size: 18px;
+    /* align-items: center; */
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.dropdown-menu ul {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: white;
+    position: absolute;
+    max-width: 300px;
+    margin-top: 0px;
+    z-index: 999;
+    padding: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+   .mobile-nav {
+    display: none;
+    background-color: #36b6ff;
+     padding: 10px 15px;
+     border-radius: 8px;
+    color: white;
+   }
+
+  .dropdown-menu li {
+    border-bottom: 1px solid rgb(205, 197, 197);
+    padding-bottom: 5px;
+    padding-top: 10px;
+    width: 100%;
+  }
+
+.menu-item:hover .dropdown-menu {
+  display: block;
+}
+
+
+.dropdown-menu li:hover {
+    background-color: #1f053c;
+    color: white;
+    cursor: pointer;
+}
+
+
+.menu-item li:last-child {
+    border-bottom: 0px;
+}
+
+
+.dropdown-menu {
+    padding-top: 15px;
+}
+
+.call-button a button {
+    /* background-color: #4CAF50; */
+    border: none;
+    padding: 4px 12px 4px 5px;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+ .call-button button {
+    background: none;
+ }
+
+  .call-button {
+    border: 1px solid rgb(68, 64, 64);
+    padding: 5px;
+    border-radius: 40px;
+  }
+  
+
+  .call-button:hover {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+  }
+
+  .call-button:hover button{
+    color: white;
+  }
+
+
+  .main-message {
+    min-height: 90vh; /* Adjust based on design preference */
+    position: relative;
+    width: 100%;
+}
+
+.main-message video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+  /* the second part starts here */
+
+   .boarding {
+    height: 80%;
+    width: 40%;
+   }   
+
+  .boarding h1 {
+    position: absolute;
+    bottom: 39%;
+    left: 5%;
+    color: white;
+    font-size: 20px;
+    margin: 10px 0px 15px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+  }
+
+
+  .boarding h2 {
+    font-size: 52px;
+    position: absolute;
+    bottom: 26%;
+    left: 5%;
+    color: white;
+    margin: 20px 0px 25px;
+  }
+
+  .boarding h2 span {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+
+  .boarding h3 {
+    margin: 10px 0px 15px;
+    font-size: 18px;
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    color: white;
+  }
+
+
+  .boarding button {
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+    font-size: 15px;
+    /* width: 10%; */
+    border-radius: 30px;
+    border: none;
+    padding: 17px 35px;
+  }
+
+
+  .boarding button:hover {
+    cursor: pointer;
+    transition: 500ms;
+    background-color: #1f053c;
+    color: white;
+  }
+
+
+  .About {
+    margin: 60px auto;
+    max-width: 1300px;
+    padding: 20px;
+}
+
+.about-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 20px;
+    background-color: #1f053c;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+
+
+.about-content {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+
+.about-content h2 {
+    padding: 17px 0px;
+    font-size: 40px;
+    font-family: "Merriweather", serif;
+
+}
+
+.about-content h4 {
+    margin: 0;
+    font-family: "Merriweather", serif;
+    font-size: 24px;
+    color: #ffd700;
+}
+
+.about-list {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 70px;
+}
+
+.about-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.about-list ul li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.about-list ul li:before {
+    content: url("img/tick.png");
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: auto;
+}
+
+.about-list .right-align {
+    align-self: flex-start;
+    width: 100%;
+}
+
+.about-content p {
+    text-align: justify;
+    margin: 20px 0px;
+}
+
+
+.about-content button {
+    font-size: 15px;
+    /* width: 10%; */
+    margin: 20px 0px;
+    border-radius: 30px;
+    border: none;
+    padding: 17px 35px;
+}
+
+.about-content button:hover {
+  cursor: pointer;
+  background-color:#fc813c;
+  color: white;
+}
+
+
+  /************************************************ Service section starts here  ***************************************/
+
+     .service {
+        padding:20px 30px 0px 30px;
+        position: relative;
+     }
+
+    .service h1{
+        margin-top:40px;
+        text-align: center;
+        font-family: "Merriweather", serif;
+    }
+
+
+
+    .service-flex {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+
+    .service-content {
+        width: 30%;
+        text-align: justify;
+        padding: 15px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-top: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+        background-color: rgb(50, 61, 78);
+        color: white;
+    }
+
+
+    .service-content h3 {
+        font-family: "Merriweather", serif;
+        padding: 20px 0px;
+        font-size: 25px;
+    }
+
+
+    .service-content p {
+        padding: 0px 20px;
+        text-align: center;
+    }
+
+
+     
+    .view-more {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        justify-content: center;
+        margin-top: 40px;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 20px;
+        transition: color 0.3s ease;
+    }
+    
+    .right-arrow {
+        display: flex;
+        align-items: center;
+        margin-left: 8px; /* Add space between text and arrow */
+    }
+    
+    .arrow-icon {
+        width: 20px;
+        height: 20px;
+        stroke: gray; /* Default arrow color */
+        transition: stroke 0.3s ease;
+    }
+    
+    .view-more:hover {
+        color: blue; /* Change text color on hover */
+    }
+    
+    .view-more:hover .arrow-icon {
+        stroke: blue; /* Change arrow color on hover */
+    }
+    
+
+
+  /************************************************ Service section ends here  ***************************************/
+
+
+  /************************************************ get in touch section stars here  ***************************************/
+
+   .get-in-touch {
+    position: relative;
+     margin-bottom: -30px;
+    margin-top: 100px;
+    padding: 0px 40px;
+   }
+   
+
+   .touch-flex {
+    background-image: url("img/Get-started-now-btm.png");
+    background-size: cover;
+     justify-content: space-between;
+    border-radius: 20px;
+     padding: 10px 40px;
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+   .touch-content h3 {
+    font-family: "Merriweather", serif;
+       color: #1f053c;
+       font-size: 40px;
+       padding-bottom: 20px;
+   }
+
+   .touch-content p {
+    font-size: 20px;
+    padding-bottom: 10px;
+   }
+
+   .touch-button {
+    padding-top: 20px;
+    width: 25%;
+   }
+
+   .touch-button button {
+       border: none;
+       padding: 20px;
+       width: 60%;
+       font-size: 17px;
+       border-radius: 50px;
+       border: 1px solid black;
+       background: none;
+
+   }
+
+
+
+  /************************************************ get in touch section ends here  ***************************************/
+
+
+  /************************************************ partnership section starts here  ***************************************/
+  .partnership {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensures both divs have the same height */
+}
+
+.partnership-content {
+    background-color: #14002a;
+    color: white;
+    width: 50%;
+    display: flex; /* Use flexbox to align internal content */
+    flex-direction: column; /* Stack content vertically inside */
+    justify-content: center; /* Center the content vertically */
+    padding: 40px; /* Add consistent padding */
+}
+
+.partnership-content p {
+    padding: 10px 0px;
+}
+
+.partner-image {
+    width: 50%;
+    display: flex; /* Ensures image aligns properly */
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+}
+
+.partner-image img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image scales properly */
+}
+
+
+
+
+  /************************************************ partnership section ends here  ***************************************/
+
+  /************************************************ why choose us section starts here  ***************************************/
+ 
+  .why-us {
+    margin-top: 70px;
+    padding: 20px 60px;
+  }
+
+  .why-us-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligns the content and image vertically */
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  
+  .why-us-content {
+    padding: 30px;
+    width: 45%;
+    display: flex; /* Optional: This helps if you want to align nested items */
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .why-us-image {
+    width: 50%;
+    display: flex; /* Ensures the image is aligned */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .why-us-image img {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures the image fits nicely */
+  }
+
+ .why-us-content h3 {
+    color: red;
+    font-size: 30px;
+    font-family: "Merriweather", serif;
+ }
+
+ .why-us-content h1 {
+    font-size: 40px;
+    font-weight: 500;
+    padding: 20px 0px;
+    color: rgb(81, 79, 79);
+ }
+
+ .why-us-content p {
+   text-align: justify;
+   line-height: 22px;
+   padding: 10px 0px 20px;
+ }
+
+ .why-us-content ul {
+    padding: 10px 0px;
+ }
+  
+ .why-us-content ul li {
+    padding: 5px 0px;
+ }
+
+ .why-us-content ul li::before {
+    content: url("img/Gray-true-arrow.png");
+    padding-right: 20px;
+ }
+
+
+ .why-us-content button {
+    font-size: 15px;
+    background: none;
+    border: none;
+    border:1px solid black;
+    margin: 20px 0px;
+    width: 30%;
+    border-radius: 30px;
+    padding: 17px 35px;
+ }
+
+ 
+   
+  /************************************************ why choose us section ends here  ***************************************/
+
+
+
+  /************************************************ footer section starts here  ***************************************/
+
+   .footer {
+    background-image: url("img/footer.jpg");
+    padding: 20px 100px;
+    margin-top: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+
+     .footer-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom:15px;
+        border-bottom: 0.05px solid rgb(108, 108, 108);
+     }
+
+     .social {
+        margin-right: 30px;
+     }
+
+     .social-media ul{
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+     }
+      
+     .social-media ul li {
+        border: 2px solid white;
+        border-radius: 100%;
+        padding:6px 7px 4px;
+        text-align: center;
+     }
+
+
+     .footer-flex {
+        border-bottom: 0.05px solid rgb(108, 108, 108);
+        display: flex;
+        color: white;
+        padding-bottom: 20px;
+        margin-top: 30px;
+        justify-content: space-between; /* Distribute sections evenly */
+    }
+    
+    .footer-flex > div {
+        text-align: left; /* Align content within each section to the left */
+    }
+    
+    .quick-links ul,
+    .service-footer ul {
+        font-size: 16px;
+        margin-top: 30px;
+        padding-left: 0; /* Remove extra padding */
+    }
+
+
+    
+    .contact ul {
+        margin: 0;
+        margin-top: 30px;
+        padding-left: 0; /* Remove extra padding */
+        list-style: none; /* Avoid default bullet points */
+    }
+     
+    .contact ul li span {
+        padding-right: 10px;
+    }
+
+    .contact ul li {
+        padding: 10px 0px 10px 4px;
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    
+    .quick-links ul li::before, 
+    .service-footer ul li::before {
+        padding-right: 5px;
+        content: url("img/Orange-arrow.png");
+    }
+    
+    .contact ul li {
+        margin-bottom: 10px; /* Add spacing between contact items */
+    }
+    
+     
+    .quick-links-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        flex-direction: row;
+    }
+    
+    .quick-links-list ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 40px;
+    }
+    
+    .quick-links-list li {
+        padding: 20px 30px 20px 0px;
+    }
+
+    .service-footer-flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        flex-direction: row;
+
+    }
+
+    .service-footer-flex ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 40px;
+    }
+
+    .service-footer-flex li {
+        padding: 20px 20px 20px 0px;
+    }
+
+
+    .copyright {
+        color: white;
+    }
+
+    .copyright-flex {
+        display: flex;
+        font-size: 12px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0px;
+    }
+
+    .red {
+        color: red;
+    }
+    
+  /************************************************ footer section ends here  ***************************************/
+
+
+
+
+
+    
+
+
+
+
+
+  @media screen and (max-width: 768px) {
+    /* Head Menu */
+    .head-menu {
+        display: none;
+    }
+
+
+    .menu-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .right-menu span,
+    .left-menu ul li {
+        padding: 5px 0;
+    }
+
+    .left-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .call-button {
+        display: none;
+    }
+    /* Navbar */
+    .slide-head {
+        padding: 10px;
+    }
+
+    .slide-head-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar ul a {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        position: static;
+        max-width: 100%;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    /* Call Button */
+    .call-button {
+        width: 100%;
+        border-radius: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .call-button a button {
+        justify-content: center;
+    }
+
+    /* Main Message */
+    .main-message {
+        background-size: cover;
+        background-position: center;
+        min-height: 50vh;
+    }
+
+    .boarding {
+        position: static;
+        text-align: center;
+        padding: 20px;
+    }
+
+   
+  .boarding h1 {
+    bottom: 40%;
+    left: 5%;
+    font-size: 30px;
+  }
+
+
+  .boarding h2 {
+    font-size: 60px;
+    bottom: 30%;
+    left: 5%;
+  }
+
+ 
+
+  .boarding h3 {
+    font-size: 18px;
+    bottom: 20%;
+  }
+
+
+
+    .about-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        margin-top: 20px;
+    }
+
+
+    .service-flex {
+        width: 100%;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    
+    .partnership {
+        flex-wrap: wrap;
+  
+      }
+  
+  
+    .partnership-content {
+      width: 100%;
+    }
+  
+     
+    .partnership-content p:last-child {
+      padding-bottom: 0px;
+    }
+  
+    .partner-image{
+      width: 100%;
+    }
+
+     .why-us {
+        padding: 20px;
+     }
+
+    .why-us-content {
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+      }
+
+      .why-us-content ul li {
+        padding: 10px 0px;
+      }
+      
+      .why-us-image {
+        width: 100%;
+      }
+
+      .why-us-content button {
+        width: 100%;
+      }
+    
+      .footer {
+        padding: 0px;
+       }
+    
+         .footer-head {
+            flex-wrap: nowrap;
+         }
+    
+         .footer-flex {
+            display: block;
+            text-align: center;
+            padding: 0px 5px;
+        }
+
+        .contact ul li {
+            text-align: center;
+            font-size: 13px;
+        }
+        .contact ul {
+            width: 100%;
+            text-align: center;
+        }
+
+        .contact {
+            margin-bottom: 40px;
+            text-align: center;
+            display: block;
+        }
+
+        .contact h3 {
+            text-align: center;
+        }
+         
+        .quick-links h3{
+            text-align: center;
+            font-size: 30px;
+            padding-bottom: 20px;
+
+        }
+
+        .quick-links-list {
+            display: block;
+            gap: 0;
+            text-align: center;
+            flex-wrap: nowrap;
+        }
+        
+        .quick-links-list ul {
+            padding: 0px;
+            margin: 0px;
+        }
+
+
+        .service-footer{
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+            padding-bottom: 30px;
+        }
+
+        .service-footer-flex {
+           display: block;
+           text-align: center;
+        }
+
+        .service-footer h3 {
+            text-align: center;
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+    
+    
+        .service-footer-flex ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 40px;
+        }
+    
+        .service-footer-flex li {
+            padding: 20px 20px 20px 0px;
+        }
+    
+    
+        .service-footer-flex ul {
+            margin-top: 0px;
+        }
+    
+        .service-footer-flex li {
+            padding: 10px 10px 10px 0px;
+        }
+
+
+        .copyright-flex {
+            font-size: 8px;
+            justify-content: space-around;
+        }
+        
+
+        .container-flex {
+            flex-direction: column;
+        }
+        
+        .container {
+            padding: 0px;
+        }
+        
+        .container-left {
+            width: 100%;
+            position: relative;
+        }
+        
+        .container-left img {
+            width: 100%;
+        }
+
+
+}
+
+/* Smaller Mobile Devices */
+@media screen and (max-width: 480px) {
+    /* Main Message */
+    .main-message {
+        background-size: cover;
+        height: 70vh;
+        background-position-x: right;
+    }
+
+    .boarding {
+        width: 30%;
+        /* padding: 10px; */
+    }
+
+    .boarding h1 {
+        font-size: 14px;
+        left: 1%;
+        bottom: 40%;
+        width: 100%;
+    }
+
+    .boarding h2 {
+        left: 1%;
+        bottom: 30%;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .boarding h3 {
+        left: 1%;
+        width: 100%;
+        bottom: 23%;
+        font-size: 10px;
+    }
+
+
+         
+    .slide-head-content {
+        flex-direction: row;
+        
+    }
+
+    /* Hide unnecessary elements */
+    .head-menu,
+    .menu-list,
+    .navbar {
+        display: none;
+    }
+
+        .About {
+            padding: 5px;
+        }
+
+
+        .about-list {
+            flex-direction: column;
+            gap: 0;
+        }
+       
+       
+      .get-in-touch button {
+        width: 100%;
+      }
+
+      
+    .about-flex {
+        padding: 10px;
+    }
+
+    .about-content h4 {
+        font-size: 18px;
+    }
+
+    .about-content p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .about-img img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .service-flex {
+        gap: 10px;
+    }
+
+    .service-content {
+        width: 100%;
+    }
+
+
+    .partnership {
+      flex-wrap: wrap;
+
+    }
+
+
+  .partnership-content {
+    width: 100%;
+  }
+
+   
+  .partnership-content p:last-child {
+    padding-bottom: 0px;
+  }
+
+  .partner-image{
+    width: 100%;
+  }
+
+  .touch-button {
+    width: 100%;
+  }
+  
+  .touch-button button {
+    border: none;
+    padding: 20px;
+    width: 100%;
+    font-size: 17px;
+    border-radius: 50px;
+    border: 1px solid black;
+    background: none;
+
+}
+
+
+.about-header h2 {
+    font-size: 28px;
+}
+
+.container-flex {
+    padding-top:30px !important;
+    flex-direction: column;
+}
+
+
+.container {
+    padding: 0px;
+}
+
+.container-left {
+    width: 100%;
+}
+
+.container-btn {
+    text-align: center;
+}
+
+.right {
+    flex-direction: column-reverse;
+}
+
+
+}
+
+
+
+
+/***********************************other page styling ***********************************/
+
+
+
+.about-header {
+    margin-top: 70px;
+    text-align: center;
+}
+
+
+.about-header h2 {
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.about-us-more {
+    padding: 30px;
+}
+
+
+/* container */
+
+.container {
+    margin-top: 0px;
+    position: relative;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+.container-flex {
+ display: flex;
+ gap: 20px;
+ flex: 1;
+ align-items: center;
+}
+
+
+.container-right {
+    padding: 20px 40px 20px 20px;
+    padding-top: 10px;
+}
+
+
+.container-left {
+    width: 100%;
+}
+.container-left img {
+    border-radius: 20px;
+}
+
+.container-right h3 {
+    color: #fc813c;
+    font-size: 30px;
+}
+
+.container-right h2 {
+    padding: 10px 0px;
+    font-size: 40px;
+    color: #14002a;
+}
+
+
+.container-right p {
+    color: rgb(87, 86, 86);
+    font-size: 19px;
+    padding: 15px 0px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.container-btn {
+    padding-top: 22px;
+}
+
+.container-btn a button {
+    background: none;
+    padding: 10px;
+    width: 25%;
+    font-size: 17px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.container-btn a button:hover {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid white;
+}
+

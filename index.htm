@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img\icon.png">
+    <title>Alok Consultancy Limited</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <!-- mobile navbar -->
+
+   <div id="mySidenav" class="sidenav">
+    <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</button>
+    <div class="nav-logo">
+      <a href="index.htm">
+    <img src="img\logo.png" alt="Alok consultancy" width="120px"></a>
+  </div>
+    <a href="vat_submission.htm" target="_blank">Vat Submission</a>
+    <a href="finreport.htm" target="_blank">Financial Reporting</a>
+    <a href="busplanning.htm" target="_blank">Business Strategy & Planning </a>
+    <a href="busimprovement.htm" target="_blank">Business Process Improvement</a>
+    <a href="itservice.htm" target="_blank">IT Services</a>
+    <a href="risk-management.htm" target="_blank">Risk Management</a>
+    <a href="acc-management.htm" target="_blank">Account Management </a>
+    <a href="tax-planning.htm" target="_blank">Tax Planning & Compliance </a>
+
+    <div class="contact-btn">
+      
+        <a href="javascript:void(0);"  onclick="openGmail('contact@alokconsultancy.co.uk ')">
+          <button style="font-size: 15px;"> contact@alokconsultancy.co.uk </button>
+        </a>
+      <a href="tel:+919328143267" style="text-decoration: none;">
+        <button class="btn"><img src="https://advikenterprise.co.uk/wp-content/uploads/2023/09/Header-icon-img.svg" alt="Header icon"><span>+44 7563559038</span></button>
+        </a>
+    </div>
+  </div>
+
+   <!-- mobile navvbar ends here -->
+
+
+    <header class="main">
+        <div class="head-menu">
+          <div class="menu-list">
+
+            <div class="right-menu">
+
+            <span>
+                <span class="add-email">Address /</span>
+                11 Shaws Road, Crawley, RH10 8DQ
+            </span>
+
+            <span>
+                <span class="add-email">Email /</span>
+                <a href="javascript:void(0);" onclick="openGmail('contact@alokconsultancy.co.uk ')">
+                  contact@alokconsultancy.co.uk 
+                </a>
+            </span>
+        </div>
+
+         <div class="left-menu">
+          <ul>
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=61551990594406" target="_blank" class="wpex-facebook wpex-social-btn wpex-social-btn-no-style" rel="noopener noreferrer"><span class="wpex-svg-icon" aria-hidden="true"><svg height="20" width="20" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 32"><path d="M17.125 0.214v4.714h-2.804q-1.536 0-2.071 0.643t-0.536 1.929v3.375h5.232l-0.696 5.286h-4.536v13.554h-5.464v-13.554h-4.554v-5.286h4.554v-3.893q0-3.321 1.857-5.152t4.946-1.83q2.625 0 4.071 0.214z"></path></svg></a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/company/alok-consultancy-limited/about/?viewAsMember=true" target="_blank" class="wpex-linkedin wpex-social-btn wpex-social-btn-no-style" rel="noopener noreferrer"><svg height="20" width="20" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 32"><path d="M6.232 11.161v17.696h-5.893v-17.696h5.893zM6.607 5.696q0.018 1.304-0.902 2.179t-2.42 0.875h-0.036q-1.464 0-2.357-0.875t-0.893-2.179q0-1.321 0.92-2.188t2.402-0.866 2.375 0.866 0.911 2.188zM27.429 18.714v10.143h-5.875v-9.464q0-1.875-0.723-2.938t-2.259-1.063q-1.125 0-1.884 0.616t-1.134 1.527q-0.196 0.536-0.196 1.446v9.875h-5.875q0.036-7.125 0.036-11.554t-0.018-5.286l-0.018-0.857h5.875v2.571h-0.036q0.357-0.571 0.732-1t1.009-0.929 1.554-0.777 2.045-0.277q3.054 0 4.911 2.027t1.857 5.938z"></path></svg></a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/alokconaultancy_uk/?hl=en#" target="_blank">
+                    <svg height="20" width="20" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 32"><path d="M18.286 16q0-1.893-1.339-3.232t-3.232-1.339-3.232 1.339-1.339 3.232 1.339 3.232 3.232 1.339 3.232-1.339 1.339-3.232zM20.75 16q0 2.929-2.054 4.982t-4.982 2.054-4.982-2.054-2.054-4.982 2.054-4.982 4.982-2.054 4.982 2.054 2.054 4.982zM22.679 8.679q0 0.679-0.482 1.161t-1.161 0.482-1.161-0.482-0.482-1.161 0.482-1.161 1.161-0.482 1.161 0.482 0.482 1.161zM13.714 4.75q-0.125 0-1.366-0.009t-1.884 0-1.723 0.054-1.839 0.179-1.277 0.33q-0.893 0.357-1.571 1.036t-1.036 1.571q-0.196 0.518-0.33 1.277t-0.179 1.839-0.054 1.723 0 1.884 0.009 1.366-0.009 1.366 0 1.884 0.054 1.723 0.179 1.839 0.33 1.277q0.357 0.893 1.036 1.571t1.571 1.036q0.518 0.196 1.277 0.33t1.839 0.179 1.723 0.054 1.884 0 1.366-0.009 1.366 0.009 1.884 0 1.723-0.054 1.839-0.179 1.277-0.33q0.893-0.357 1.571-1.036t1.036-1.571q0.196-0.518 0.33-1.277t0.179-1.839 0.054-1.723 0-1.884-0.009-1.366 0.009-1.366 0-1.884-0.054-1.723-0.179-1.839-0.33-1.277q-0.357-0.893-1.036-1.571t-1.571-1.036q-0.518-0.196-1.277-0.33t-1.839-0.179-1.723-0.054-1.884 0-1.366 0.009zM27.429 16q0 4.089-0.089 5.661-0.179 3.714-2.214 5.75t-5.75 2.214q-1.571 0.089-5.661 0.089t-5.661-0.089q-3.714-0.179-5.75-2.214t-2.214-5.75q-0.089-1.571-0.089-5.661t0.089-5.661q0.179-3.714 2.214-5.75t5.75-2.214q1.571-0.089 5.661-0.089t5.661 0.089q3.714 0.179 5.75 2.214t2.214 5.75q0.089 1.571 0.089 5.661z"></path></svg></a>
+                </li>
+          </ul>
+         </div>
+          </div>
+        </div>
+    </header>
+
+   <!-- next menu starts here -->
+     
+   <div class="slide-head sticky-menu">
+        <div class="slide-head-content">
+            <!-- the logo starts here -->
+         <div class="logo">
+              <div class="logo-content">
+                 <a href="index.htm"><img src="img\logo.png" alt="Alok consultancy" width="100px"></a>
+              </div>
+         </div>
+              <!-- the logo ends here -->
+                <nav class="navbar">
+                <ul>
+                    <li><a href="index.htm">home</a></li>
+                    <li><a href="about.htm">About</a></li>
+                    <li class="menu-item">
+                        <a href="#" >
+                          <span class="link-linner">Services</span>
+                          <svg height="20" width="20" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 32">
+                            <path d="M19.192 12.286q0 0.232-0.179 0.411l-8.321 8.321q-0.179 0.179-0.411 0.179t-0.411-0.179l-8.321-8.321q-0.179-0.179-0.179-0.411t0.179-0.411l0.893-0.893q0.179-0.179 0.411-0.179t0.411 0.179l7.018 7.018 7.018-7.018q0.179-0.179 0.411-0.179t0.411 0.179l0.893 0.893q0.179 0.179 0.179 0.411z"></path>
+                          </svg>
+                        </a>
+                        <span class="dropdown-menu">
+                          <ul>
+                            <li><a href="vat_submission.htm" target="_blank">Vat Submission</a></li>
+                            <li><a href="finreport.htm" target="_blank">Financial Reporting</a></li>
+                            <li><a href="busplanning.htm" target="_blank">Business Strategy & Planning </a></li>
+                            <li><a href="busimprovement.htm" target="_blank">Business Process Improvement</a></li>
+                            <li><a href="itservice.htm" target="_blank">IT Services</a></li>
+                            <li><a href="risk-management.htm" target="_blank">Risk Management</a></li>
+                            <li><a href="acc-management.htm" target="_blank">Account Management </a></li>
+                            <li><a href="tax-planning.htm" target="_blank">Tax Planning & Compliance </a></li>
+                          </ul>
+                        </span>
+                      </li>
+                      
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                </nav>
+              <!-- the menu bar starts here -->
+
+              <div class="call-button">
+                <a href="tel:+447563559038" style="text-decoration: none;">
+                  <button><img src="https://advikenterprise.co.uk/wp-content/uploads/2023/09/Header-icon-img.svg" alt="Header icon">+44 7563559038</button>
+                  </a>
+              </div>
+
+              <div class="mobile-nav">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+              </div>
+
+        </div>
+   </div>
+
+   <div class="main">
+    <section class="main-message"> 
+      <video autoplay muted loop>
+          <source src="https://videos.pexels.com/video-files/29765099/12791129_1920_1080_30fps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      <section class="boarding">
+          <h1>Welcome to Alok Enterprise Limited</h1>
+          <h2>Your partner for your <span>next big leap</span></h2>
+          <h3>We can help with IT Infrastructure, Business Process Improvement, IT Services, Risk Management, Website Development and Tax Planning & Compliance </h3>
+
+          <button>View More</button>
+      </section>
+  </section>
+
+    <!-- the main-message header ends here -->
+ 
+    <div class="About">
+      <section class="about-flex">
+       <div class="about-img">
+       <img src="img/about_change.jpeg" alt="ABout ALok consultancy" width="100%" >
+       </div>
+
+       <div class="about-content">
+        <h4>About Alok Consultancy Limited</h4>
+        <h2>Make it easy to do your business with us and we are best</h2>
+        <p>Alok Consultancy Limited specializes in delivering end-to-end IT solutions, including seamless user and device management, cutting-edge website and application development, efficient cloud migration services, and reliable technical support. We empower businesses with innovative tools to enhance productivity and drive success.</p>
+        <div class="about-list">
+          <ul class="left-side">
+            <li>Vat Submission</li>
+            <li>Financial Reporting</li>
+            <li>Account Management </li>
+          </ul>
+            <ul class="right-side">
+            <li>Business Strategy & Planning </li>
+            <li>Tax Planning & Compliance </li>
+            <li>Business Process Improvement</li>
+          </ul>
+        </div>
+
+        <p>
+          At Alok Consultancy, our strategic partnerships form the foundation of our ability to provide innovative and transformative solutions to our clients. By collaborating with industry-leading organizations and pioneers of innovation, we gain unparalleled access to cutting-edge technologies, emerging trends, and proven best practices. </p>
+
+          <a href="about.htm" target="_blank"><button>View More</button></a>
+          
+       </div>
+      </section>
+    </div>
+
+    <!-- ABout section is ends here ------------------------------------------------------>
+     
+    <!----------------------------------------the Service section starts here --------------->
+    <div class="service">
+         
+          <h1>Our Services</h1>
+
+          <section class="service-flex">
+
+             <!-- service section one starts here -->
+            <div class="service-content">
+             
+              <img src="img/IT-Infra-Hover.png" alt="Business Strategy & Planning " width="70px" height="70px">
+              <h3>Business Strategy & Planning </h3>
+              <p>
+                Strengthen your digital foundation with our IT Infrastructure solutions. We optimize hardware, software, and networks for reliability and peak performance.</p>
+               
+                <span class="view-more">
+                  <a href="busplanning.htm" target="_blank">
+                  View More
+                </a>
+                  <span class="right-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arrow-icon">
+                          <path d="M2 12h18M18 5l6 7-6 7" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </span>
+                  
+              </span>
+            </div>
+             <!-- service section one ends here -->
+
+
+             <!-- service section two starts here -->
+            <div class="service-content">
+             
+              <img src="img/Hosting-Hover.png" alt="IT Services" width="70px" height="70px">
+              <h3>IT Services</h3>
+              <p>
+                Unlock the full potential of the cloud with our IT Services Solutions. Effortlessly scale, fortify your security, and optimize your IT resources for unparalleled efficiency and performance.</p>
+               
+                <span class="view-more">
+                  <a href="itservice.htm" target="_blank">
+                  View More
+                  </a>
+                  <span class="right-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arrow-icon">
+                          <path d="M2 12h18M18 5l6 7-6 7" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </span>
+              </span>
+            </div>
+             <!-- service section two ends here -->
+
+
+             <!-- service section three starts here -->
+            <div class="service-content">
+             
+              <img src="img/Data-hover.png" alt="Risk Management" width="70px" height="70px">
+              <h3>Risk Management</h3>
+              <p>
+                Protect what matters most with our Risk Management Solutions. Harness advanced technologies to safeguard your critical data and assets, ensuring reliability and peace of mind.</p>
+               
+                <span class="view-more">
+                  <a href="risk-management.htm" target="_blank">
+                  View More
+                  </a>
+                  <span class="right-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arrow-icon">
+                          <path d="M2 12h18M18 5l6 7-6 7" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </span>
+              </span>
+            </div>
+             <!-- service section three ends here -->
+
+            <!-- service section four starts here -->
+            <div class="service-content">
+             
+              <img src="img/Web-dev-hover.png" alt="Business Process Improvement" width="70px" height="70px">
+              <h3>Business Process Improvement</h3>
+              <p>
+                Empower your business with our Business Process Improvement Solutions—designed to enhance connectivity, drive collaboration, and fuel growth. Experience seamless, secure networks that adapt to your needs and keep your team connected anytime, anywhere.</p>
+               
+                <span class="view-more">
+                  <a href="busimprovement.htm" target="_blank">
+                  View More
+                  </a>
+                  <span class="right-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arrow-icon">
+                          <path d="M2 12h18M18 5l6 7-6 7" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </span>
+              </span>
+            </div>
+             <!-- service section four ends here -->
+            
+             <!-- service section five starts here -->
+            <div class="service-content">
+             
+              <img src="img/Digital-marketing-hover.png" alt="Tax Planning & Compliance" width="70px" height="70px">
+              <h3>Tax Planning & Compliance </h3>
+              <p>
+                Elevate your brand with our Tax Planning & Compliance  Solutions—crafted to amplify visibility, foster engagement, and drive measurable results. Leverage data-driven strategies that turn clicks into customers and make your business shine in the digital world.</p>
+               
+                <span class="view-more">
+                  <a href="tax-planning.htm" target="_blank">
+                  View More
+                  </a>
+                  <span class="right-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arrow-icon">
+                          <path d="M2 12h18M18 5l6 7-6 7" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </span>
+              </span>
+            </div>
+             <!-- service section five ends here -->
+
+              <!-- service section six starts here -->
+            <div class="service-content">
+             
+              <img src="img/Web-dev-hover.png" alt="Account Management " width="70px" height="70px">
+              <h3>Account Management</h3>
+              <p>
+                Transform your online presence with our Website Development Services. We create visually stunning, user-centric websites that not only showcase your brand but also captivate and engage your audience effectively.</p>
+               
+                <span class="view-more">
+                  <a href="acc-management.htm" target="_blank">
+                  View More
+                  </a>
+                  <span class="right-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arrow-icon">
+                          <path d="M2 12h18M18 5l6 7-6 7" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </span>
+              </span>
+            </div>
+             <!-- service section six ends here -->
+
+
+              <!-- service section seven starts here -->
+            <div class="service-content">
+             
+              <img src="img/cyber-security-hover-img-1.png.webp" alt="Financial Reporting" width="70px" height="70px">
+              <h3>Financial Reporting</h3>
+              <p>
+                At Alok Consultancy, we provide a complete range of Cyber security services tailored to safeguard your organization against evolving digital threats, ensuring your data and systems remain secure and resilient.</p>
+               
+                <span class="view-more">
+                  <a href="finreport.htm" target="_blank">
+                  View More
+                  </a>
+                  <span class="right-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arrow-icon">
+                          <path d="M2 12h18M18 5l6 7-6 7" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </span>
+              </span>
+            </div>
+             <!-- service section seven ends here -->
+
+              <!-- service section eight starts here -->
+            <div class="service-content">
+             
+              <img src="img/artificial-intelligece-hover-img.png.webp" alt="Vat Submission" width="70px" height="70px">
+              <h3>Vat Submission</h3>
+              <p>
+                At Alok Consultancy, our Machine Learning services leverage cutting-edge algorithms to process large datasets, uncover valuable insights, and deliver accurate predictions that drive informed decision-making</p>
+               
+                <span class="view-more">
+                  <a href="vat_submission.htm" target="_blank">
+                  View More
+                  </a>
+                  <span class="right-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arrow-icon">
+                          <path d="M2 12h18M18 5l6 7-6 7" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </span>
+              </span>
+            </div>
+             <!-- service section eight ends here -->
+
+
+
+
+        </section>
+
+    </div>
+      <!----------------------------------------------------the service section is ends here --------------------------->
+
+      <!-------------------------------------------------------- get in touch starts here ---------------------------------->
+
+       <div class="get-in-touch">
+
+        <div class="touch-flex">
+      
+          <div class="touch-content">
+            <h3>Get started now</h3>
+            <p>If you would like to work with us or just want to get in touch, we’d love to hear from you!</p>
+          </div>
+
+          <div class="touch-button">
+             <button>Get In Touch</button>
+          </div>
+
+        </div>
+
+       </div>
+         
+
+
+
+
+      <!-------------------------------------------------------- get in touch ends here ---------------------------------->
+
+      <!-------------------------------------------------------- partnership starts here ---------------------------------->
+       
+      <div class="partnership">
+        
+
+        <div class="partnership-content">
+          <h2>We are associated with</h2>
+
+          <p>At Alok Consultancy, we take immense pride in our extensive network of partnerships and collaborations. By joining forces with industry leaders, technology innovators, and like-minded businesses, we are empowered to deliver cutting-edge solutions that consistently exceed client expectations. These strategic alliances grant us access to the latest technologies, emerging trends, and industry best practices, ensuring our services remain at the forefront of excellence.<br/></p>
+
+          <p>Our partnerships span a wide array of industries, including IT infrastructure, cloud services, Tax Planning & Compliance , and cybersecurity. This diverse network enables us to leverage specialized expertise and valuable insights, allowing us to address the unique challenges and goals of each client. By fostering innovation, adaptability, and continuous evolution, we stay ahead in the ever-changing business landscape, consistently providing high-quality, results-driven solutions that propel our clients toward success.</p>
+        </div>
+
+        <div class="partner-image">
+          <img src="img/partner.webp" alt="partner">
+      </div>
+
+      </div>
+        
+
+
+
+      <!-------------------------------------------------------- partnership ends here ---------------------------------->
+
+      <!-------------------------------------------------------- sponsers starts here ---------------------------------->
+      
+
+        
+       <div class="why-us">
+          <section class="why-us-flex">
+            <div class="why-us-content">
+
+              <h3>Why  Choose Us ?</h3>
+
+              <h1>Reasons to Select Our <br/>
+               <b><i>Outstanding  Services</i></b></h1>
+
+               <p>First and foremost, our proven track record showcases our expertise and unwavering commitment to delivering exceptional results that drive our clients' success. Additionally, we recognize that every business is distinct, which is why we meticulously customize our solutions to align perfectly with your unique requirements—making us your ideal partner.</p>
+
+
+               <ul>
+                <li>Proven Expertise Driving Your Success.</li>
+                <li>Custom Solutions Designed to Surpass Expectations.</li>
+                <li>Dedicated to Achieving Your Business Objectives.</li>
+               </ul>
+
+
+               <button>View More</button>
+
+            </div>
+            <div class="why-us-image">
+              <img src="img/choos.jpg" alt="why choose us">
+            </div>
+
+          </section>
+       </div>
+
+      <!-------------------------------------------------------- choose ends here ---------------------------------->
+
+
+      <!-------------------------------------------------------- footer starts here ---------------------------------->
+       
+         <footer class="footer">
+           <header class="footer-head">
+              <div class="logo">
+                <a href="index.htm">
+                <img src="img/logo.png" alt="alok consultancy" width="120px">
+              </a>
+              </div>
+
+              <div class="social">
+                <div class="social-media">
+                  <ul>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=61551990594406" target="_blank" class="wpex-facebook wpex-social-btn wpex-social-btn-no-style" rel="noopener noreferrer"><span class="wpex-svg-icon" aria-hidden="true"><svg height="24" width="24" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 32"><path d="M17.125 0.214v4.714h-2.804q-1.536 0-2.071 0.643t-0.536 1.929v3.375h5.232l-0.696 5.286h-4.536v13.554h-5.464v-13.554h-4.554v-5.286h4.554v-3.893q0-3.321 1.857-5.152t4.946-1.83q2.625 0 4.071 0.214z"></path></svg></a>
+                        </li>
+        
+                        <li>
+                            <a href="https://www.linkedin.com/company/alok-consultancy-limited/about/?viewAsMember=true" target="_blank" class="wpex-linkedin wpex-social-btn wpex-social-btn-no-style" rel="noopener noreferrer"><svg height="24" width="24" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 32"><path d="M6.232 11.161v17.696h-5.893v-17.696h5.893zM6.607 5.696q0.018 1.304-0.902 2.179t-2.42 0.875h-0.036q-1.464 0-2.357-0.875t-0.893-2.179q0-1.321 0.92-2.188t2.402-0.866 2.375 0.866 0.911 2.188zM27.429 18.714v10.143h-5.875v-9.464q0-1.875-0.723-2.938t-2.259-1.063q-1.125 0-1.884 0.616t-1.134 1.527q-0.196 0.536-0.196 1.446v9.875h-5.875q0.036-7.125 0.036-11.554t-0.018-5.286l-0.018-0.857h5.875v2.571h-0.036q0.357-0.571 0.732-1t1.009-0.929 1.554-0.777 2.045-0.277q3.054 0 4.911 2.027t1.857 5.938z"></path></svg></a>
+                        </li>
+        
+                        <li>
+                            <a href="https://www.instagram.com/alokconaultancy_uk/?hl=en#" target="_blank">
+                            <svg height="24" width="24" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 32"><path d="M18.286 16q0-1.893-1.339-3.232t-3.232-1.339-3.232 1.339-1.339 3.232 1.339 3.232 3.232 1.339 3.232-1.339 1.339-3.232zM20.75 16q0 2.929-2.054 4.982t-4.982 2.054-4.982-2.054-2.054-4.982 2.054-4.982 4.982-2.054 4.982 2.054 2.054 4.982zM22.679 8.679q0 0.679-0.482 1.161t-1.161 0.482-1.161-0.482-0.482-1.161 0.482-1.161 1.161-0.482 1.161 0.482 0.482 1.161zM13.714 4.75q-0.125 0-1.366-0.009t-1.884 0-1.723 0.054-1.839 0.179-1.277 0.33q-0.893 0.357-1.571 1.036t-1.036 1.571q-0.196 0.518-0.33 1.277t-0.179 1.839-0.054 1.723 0 1.884 0.009 1.366-0.009 1.366 0 1.884 0.054 1.723 0.179 1.839 0.33 1.277q0.357 0.893 1.036 1.571t1.571 1.036q0.518 0.196 1.277 0.33t1.839 0.179 1.723 0.054 1.884 0 1.366-0.009 1.366 0.009 1.884 0 1.723-0.054 1.839-0.179 1.277-0.33q0.893-0.357 1.571-1.036t1.036-1.571q0.196-0.518 0.33-1.277t0.179-1.839 0.054-1.723 0-1.884-0.009-1.366 0.009-1.366 0-1.884-0.054-1.723-0.179-1.839-0.33-1.277q-0.357-0.893-1.036-1.571t-1.571-1.036q-0.518-0.196-1.277-0.33t-1.839-0.179-1.723-0.054-1.884 0-1.366 0.009zM27.429 16q0 4.089-0.089 5.661-0.179 3.714-2.214 5.75t-5.75 2.214q-1.571 0.089-5.661 0.089t-5.661-0.089q-3.714-0.179-5.75-2.214t-2.214-5.75q-0.089-1.571-0.089-5.661t0.089-5.661q0.179-3.714 2.214-5.75t5.75-2.214q1.571-0.089 5.661-0.089t5.661 0.089q3.714 0.179 5.75 2.214t2.214 5.75q0.089 1.571 0.089 5.661z"></path></svg></a>
+                        </li>
+                  </ul>
+                 </div>
+              </div>
+           </header>
+
+          <div class="footer-flex">
+
+            <div class="contact">
+              <h3>Contact Info</h3>
+              
+              <ul>
+                <li><span><img src="img/Location-Footer.png" alt="Location-Footer"></span>  11 Shaws Road, Crawley, RH10 8DQ </li>
+                <li><span><img src="img/Email-Footer.png" alt="email"></span>   contact@alokconsultancy.co.uk</li>
+                <li><span><img src="img/Phone-Footer.png" alt="phone"></span>  +44 7563559038</li>
+              </ul>
+
+            </div>
+             
+           <!-- ------------------------   contact ends here -->
+
+            <div class="quick-links">
+              <h3>Quick Links</h3>
+              <div class="quick-links-list">
+              <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="about.htm">About</a></li>
+                <li><a href="index.htm">Services</a></li>
+              </ul>
+                <ul class="right-side">
+                <li><a href="">Articles</a></li>
+                <li><a href="javascript:void(0);" onclick="openGmail('contact@alokconsultancy.co.uk ')">Email</a></li>
+              </ul>
+            </div>
+            </div>
+
+            <!-- -------------------------  quick links ends here  -->
+
+            <div class="service-footer">
+              <h3>Services</h3>
+
+              <div class="service-footer-flex">
+              <ul class="service-left">
+                <li><a href="vat_submission.htm" target="_blank">Vat Submission</a></li>
+                <li><a href="finreport.htm" target="_blank">Financial Reporting</a></li>
+                <li><a href="busplanning.htm" target="_blank">Business Strategy & Planning </a></li>
+                <li><a href="acc-management.htm" target="_blank">Account Management </a></li>
+                </ul>
+                <ul  class="service-right">
+                <li><a href="tax-planning.htm" target="_blank">Tax Planning & Compliance </a></li>
+                <li><a href="busimprovement.htm" target="_blank">Business Process Improvement</a></li>
+                <li><a href="risk-management.htm" target="_blank">Risk Management</a></li>
+                <li><a href="itservice.htm" target="_blank">IT Services</a></li>
+              </ul>
+            </div>
+            </div>
+
+          </div>
+
+          <div class="copyright">
+           <div class="copyright-flex">
+            <div>Copyright © 2024 <span class="red">Alok Consultancy Limited.</span> All Rights Reserved</div>
+            <div>Disclaimer | Privacy Policy</div>
+           </div>
+          </div>
+
+         </footer>
+     
+
+      <!-------------------------------------------------------- footer ends here ---------------------------------->
+
+
+
+
+   
+   </div>
+
+</body>
+<script src="script.js"></script>
+</html>
